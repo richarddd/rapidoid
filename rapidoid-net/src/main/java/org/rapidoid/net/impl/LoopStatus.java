@@ -7,7 +7,7 @@ import org.rapidoid.annotation.Since;
  * #%L
  * rapidoid-net
  * %%
- * Copyright (C) 2014 - 2015 Nikolche Mihajlovski
+ * Copyright (C) 2014 - 2016 Nikolche Mihajlovski and contributors
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,6 +27,6 @@ import org.rapidoid.annotation.Since;
 @Since("2.0.0")
 public enum LoopStatus {
 
-	INIT, BEFORE_LOOP, LOOP, AFTER_LOOP, STOPPED;
+	INIT, BEFORE_LOOP, LOOP, AFTER_LOOP, STOPPED, FAILED;
 
 }
