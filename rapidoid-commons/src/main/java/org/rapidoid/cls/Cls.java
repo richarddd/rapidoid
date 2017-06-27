@@ -1172,7 +1172,7 @@ public class Cls extends RapidoidThing {
 				LocalVariableAttribute attr = (LocalVariableAttribute) codeAttribute
 					.getAttribute(LocalVariableAttribute.tag);
 
-				int offset = Modifier.isStatic(cm.getModifiers()) ? 0 : 1;
+				int offset = 0;//Modifier.isStatic(cm.getModifiers()) ? 0 : 1;
 
 				for (int i = 0; i < names.length; i++) {
 					names[i] = null;
