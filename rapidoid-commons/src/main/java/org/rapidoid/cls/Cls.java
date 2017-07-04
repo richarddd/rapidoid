@@ -1178,6 +1178,8 @@ public class Cls extends RapidoidThing {
 					names[i] = null;
 				}
 
+				int tableDiff = attr.tableLength()-names.length-1;
+
 				for (int i = 0; i < attr.tableLength(); i++) {
 					int index = i - offset;
 
@@ -1187,8 +1189,8 @@ public class Cls extends RapidoidThing {
 
 					String var = attr.variableName(i);
 
-					if (index >= 0 && index < names.length && !"this".equals(var)) {
-						names[index] = var;
+					if (index >= 0 && index-tableDiff < names.length && !"this".equals(var)) {
+						names[index-tableDiff] = var;
 					}
 				}
 
